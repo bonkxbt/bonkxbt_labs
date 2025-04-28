@@ -340,7 +340,7 @@ graph TD
 
 ## 🌟 Community & Support
 
-- 🐦 [Twitter Updates](https://twitter.com/bonkxbt_terminal)
+- 🐦 [Twitter Updates](https://twitter.com/bonkxbt_labs)
 
 
 ## 🤝 Contributing
