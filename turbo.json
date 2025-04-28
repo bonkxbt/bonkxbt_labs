@@ -1,0 +1,90 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"ui": "stream",
+	"globalEnv": ["CI", "COVERAGE_ENABLED"],
+	"tasks": {
+		"clean": {
+			"cache": false
+		},
+		"build:backend": {
+			"dependsOn": ["bonkxbt#build"]
+		},
+		"build:frontend": {
+			"dependsOn": ["bonkxbt-editor-ui#build"]
+		},
+		"build:nodes": {
+			"dependsOn": ["bonkxbt-nodes-base#build", "@bonkxbt/bonkxbt-nodes-langchain#build"]
+		},
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+		"typecheck": {
+			"dependsOn": ["^typecheck"]
+		},
+		"format": {},
+		"format:check": {},
+		"lint:backend": {
+			"dependsOn": [
+				"@bonkxbt/api-types#lint",
+				"@bonkxbt/config#lint",
+				"@bonkxbt/client-oauth2#lint",
+				"@bonkxbt/imap#lint",
+				"@bonkxbt/permissions#lint",
+				"@bonkxbt/task-runner#lint",
+				"bonkxbt-workflow#lint",
+				"bonkxbt-core#lint",
+				"bonkxbt-node-dev#lint",
+				"bonkxbt#lint"
+			]
+		},
+		"lint:frontend": {
+			"dependsOn": [
+				"@bonkxbt/chat#lint",
+				"@bonkxbt/codemirror-lang#lint",
+				"@bonkxbt/storybook#lint",
+				"bonkxbt-cypress#lint",
+				"bonkxbt-design-system#lint",
+				"bonkxbt-editor-ui#lint"
+			]
+		},
+		"lint:nodes": {
+			"dependsOn": ["bonkxbt-nodes-base#lint", "@bonkxbt/bonkxbt-nodes-langchain#lint"]
+		},
+		"lint": {},
+		"lintfix": {},
+		"test:backend": {
+			"dependsOn": [
+				"@bonkxbt/api-types#test",
+				"@bonkxbt/config#test",
+				"@bonkxbt/client-oauth2#test",
+				"@bonkxbt/imap#test",
+				"@bonkxbt/permissions#test",
+				"@bonkxbt/task-runner#test",
+				"bonkxbt-workflow#test",
+				"bonkxbt-core#test",
+				"bonkxbt#test"
+			]
+		},
+		"test:frontend": {
+			"dependsOn": [
+				"@bonkxbt/chat#test",
+				"@bonkxbt/codemirror-lang#test",
+				"bonkxbt-design-system#test",
+				"bonkxbt-editor-ui#test"
+			]
+		},
+		"test:nodes": {
+			"dependsOn": ["bonkxbt-nodes-base#test", "@bonkxbt/bonkxbt-nodes-langchain#test"]
+		},
+		"test": {},
+		"watch": {
+			"cache": false,
+			"persistent": true
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		}
+	}
+}

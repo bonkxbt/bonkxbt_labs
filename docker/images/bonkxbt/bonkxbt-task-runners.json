@@ -1,0 +1,29 @@
+{
+	"task-runners": [
+		{
+			"runner-type": "javascript",
+			"workdir": "/home/node",
+			"command": "/usr/local/bin/node",
+			"args": ["/usr/local/lib/node_modules/bonkxbt/node_modules/@bonkxbt/task-runner/dist/start.js"],
+			"allowed-env": [
+				"PATH",
+				"GENERIC_TIMEZONE",
+				"bonkxbt_RUNNERS_GRANT_TOKEN",
+				"bonkxbt_RUNNERS_TASK_BROKER_URI",
+				"bonkxbt_RUNNERS_MAX_PAYLOAD",
+				"bonkxbt_RUNNERS_MAX_CONCURRENCY",
+				"bonkxbt_RUNNERS_TASK_TIMEOUT",
+				"bonkxbt_RUNNERS_HEALTH_CHECK_SERVER_ENABLED",
+				"bonkxbt_RUNNERS_HEALTH_CHECK_SERVER_HOST",
+				"bonkxbt_RUNNERS_HEALTH_CHECK_SERVER_PORT",
+				"NODE_FUNCTION_ALLOW_BUILTIN",
+				"NODE_FUNCTION_ALLOW_EXTERNAL",
+				"NODE_OPTIONS",
+				"bonkxbt_SENTRY_DSN",
+				"bonkxbt_VERSION",
+				"ENVIRONMENT",
+				"DEPLOYMENT_NAME"
+			]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"node": "bonkxbt-nodes-base.respondToWebhook",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes", "Utility"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.respondtowebhook/"
+			}
+		]
+	},
+	"subcategories": {
+		"Core Nodes": ["Helpers"]
+	}
+}

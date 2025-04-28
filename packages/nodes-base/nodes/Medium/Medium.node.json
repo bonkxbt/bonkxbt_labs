@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.medium",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/medium/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.medium/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Learn how to automatically cross-post your content with bonkxbt",
+				"icon": "✍️",
+				"url": "https://bonkxbt.io/blog/learn-how-to-automatically-cross-post-your-content-with-bonkxbt/"
+			}
+		]
+	}
+}

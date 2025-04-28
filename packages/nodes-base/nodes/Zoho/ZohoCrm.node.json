@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.zohoCrm",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/zoho/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.zohocrm/"
+			}
+		],
+		"generic": [
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://bonkxbt.io/blog/no-code-ecommerce-workflow-automations/"
+			}
+		]
+	}
+}

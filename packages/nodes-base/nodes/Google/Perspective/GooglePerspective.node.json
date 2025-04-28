@@ -1,0 +1,26 @@
+{
+	"node": "bonkxbt-nodes-base.googlePerspective",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Analytics", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/google/oauth-single-service/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.googleperspective/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Create a toxic language detector for Telegram in 4 step",
+				"icon": "🤬",
+				"url": "https://bonkxbt.io/blog/create-a-toxic-language-detector-for-telegram/"
+			}
+		]
+	},
+	"alias": ["Moderation"]
+}

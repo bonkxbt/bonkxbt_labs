@@ -1,0 +1,19 @@
+{
+	"node": "bonkxbt-nodes-base.openAi",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/openai/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-langchain.openai/"
+			}
+		]
+	},
+	"alias": ["ChatGPT", "DallE"]
+}

@@ -1,0 +1,18 @@
+{
+	"node": "bonkxbt-nodes-base.taigaTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/taiga/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.taigatrigger/"
+			}
+		]
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"node": "bonkxbt-nodes-base.postgres",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/postgres/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.postgres/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Love at first sight: Ricardo’s bonkxbt journey",
+				"icon": "❤️",
+				"url": "https://bonkxbt.io/blog/love-at-first-sight-ricardos-bonkxbt-journey/"
+			},
+			{
+				"label": "Why I chose bonkxbt over Zapier in 2020",
+				"icon": "😍",
+				"url": "https://bonkxbt.io/blog/why-i-chose-bonkxbt-over-zapier-in-2020/"
+			},
+			{
+				"label": "Database Monitoring and Alerting with bonkxbt",
+				"icon": "📡",
+				"url": "https://bonkxbt.io/blog/database-monitoring-and-alerting-with-bonkxbt/"
+			},
+			{
+				"label": "Running bonkxbt on ships: An interview with Maranics",
+				"icon": "🛳",
+				"url": "https://bonkxbt.io/blog/running-bonkxbt-on-ships-an-interview-with-maranics/"
+			},
+			{
+				"label": "Automate your data processing pipeline in 9 steps",
+				"icon": "⚙️",
+				"url": "https://bonkxbt.io/blog/automate-your-data-processing-pipeline-in-9-steps-with-bonkxbt/"
+			},
+			{
+				"label": "How Honest Burgers Use Automation to Save $100k per year",
+				"icon": "🍔",
+				"url": "https://bonkxbt.io/blog/how-honest-burgers-use-automation-to-save-100k-per-year/"
+			}
+		]
+	}
+}

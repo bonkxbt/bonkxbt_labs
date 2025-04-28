@@ -1,0 +1,18 @@
+{
+	"node": "bonkxbt-nodes-base.customerIoTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/customerIo/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.customeriotrigger/"
+			}
+		]
+	}
+}

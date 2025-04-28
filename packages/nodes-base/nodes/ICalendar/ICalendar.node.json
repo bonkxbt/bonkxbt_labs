@@ -1,0 +1,17 @@
+{
+	"node": "bonkxbt-nodes-base.iCal",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes", "Productivity"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.converttofile/"
+			}
+		]
+	},
+	"alias": ["ics", ".ics"],
+	"subcategories": {
+		"Core Nodes": ["Files"]
+	}
+}

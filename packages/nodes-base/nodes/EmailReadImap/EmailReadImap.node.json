@@ -1,0 +1,28 @@
+{
+	"node": "bonkxbt-nodes-base.emailReadImap",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Core Nodes"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/imap/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.emailimap/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Build your own virtual assistant with bonkxbt: A step by step guide",
+				"icon": "👦",
+				"url": "https://bonkxbt.io/blog/build-your-own-virtual-assistant-with-bonkxbt-a-step-by-step-guide/"
+			}
+		]
+	},
+	"subcategories": {
+		"Core Nodes": ["Other Trigger Nodes"]
+	}
+}

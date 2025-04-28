@@ -1,0 +1,31 @@
+{
+	"node": "bonkxbt-nodes-base.emailSend",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Core Nodes"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/credentials/sendemail/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.sendemail/"
+			}
+		],
+		"generic": [
+			{
+				"label": "2021: The Year to Automate the New You with bonkxbt",
+				"icon": "☀️",
+				"url": "https://bonkxbt.io/blog/2021-the-year-to-automate-the-new-you-with-bonkxbt/"
+			},
+			{
+				"label": "Build your own virtual assistant with bonkxbt: A step by step guide",
+				"icon": "👦",
+				"url": "https://bonkxbt.io/blog/build-your-own-virtual-assistant-with-bonkxbt-a-step-by-step-guide/"
+			}
+		]
+	},
+	"alias": ["SMTP"]
+}

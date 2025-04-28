@@ -1,0 +1,20 @@
+{
+	"node": "bonkxbt-nodes-base.brevoTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/brevo/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.brevotrigger/"
+			}
+		],
+		"generic": []
+	},
+	"alias": ["sendinblue"]
+}

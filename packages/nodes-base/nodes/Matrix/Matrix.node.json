@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.matrix",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/matrix/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.matrix/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How to host virtual coffee breaks with bonkxbt",
+				"icon": "☕️",
+				"url": "https://bonkxbt.io/blog/how-to-host-virtual-coffee-breaks-with-bonkxbt/"
+			}
+		]
+	}
+}

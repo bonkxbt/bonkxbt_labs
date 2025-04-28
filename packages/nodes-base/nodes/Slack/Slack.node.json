@@ -1,0 +1,56 @@
+{
+	"node": "bonkxbt-nodes-base.slack",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"alias": ["human", "form", "wait"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/slack/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.slack/"
+			}
+		],
+		"generic": [
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://bonkxbt.io/blog/no-code-ecommerce-workflow-automations/"
+			},
+			{
+				"label": "Automate your data processing pipeline in 9 steps",
+				"icon": "⚙️",
+				"url": "https://bonkxbt.io/blog/automate-your-data-processing-pipeline-in-9-steps-with-bonkxbt/"
+			},
+			{
+				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
+				"icon": "👥",
+				"url": "https://bonkxbt.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+			},
+			{
+				"label": "5 tasks you can automate with the new Notion API ",
+				"icon": "⚡️",
+				"url": "https://bonkxbt.io/blog/5-tasks-you-can-automate-with-notion-api/"
+			},
+			{
+				"label": "Build your own virtual assistant with bonkxbt: A step by step guide",
+				"icon": "👦",
+				"url": "https://bonkxbt.io/blog/build-your-own-virtual-assistant-with-bonkxbt-a-step-by-step-guide/"
+			},
+			{
+				"label": "How to automatically give kudos to contributors with GitHub, Slack, and bonkxbt",
+				"icon": "👏",
+				"url": "https://bonkxbt.io/blog/how-to-automatically-give-kudos-to-contributors-with-github-slack-and-bonkxbt/"
+			},
+			{
+				"label": "How Common Knowledge use workflow automation for activism",
+				"icon": "✨",
+				"url": "https://bonkxbt.io/blog/automations-for-activists/"
+			}
+		]
+	}
+}

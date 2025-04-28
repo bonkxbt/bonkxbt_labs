@@ -1,0 +1,18 @@
+{
+	"node": "bonkxbt-nodes-base.lemlistTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Marketing"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/lemlist/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.lemlisttrigger/"
+			}
+		]
+	}
+}

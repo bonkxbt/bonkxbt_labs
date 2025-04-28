@@ -1,0 +1,30 @@
+{
+	"node": "bonkxbt-nodes-base.openWeatherMap",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Miscellaneous", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/openWeatherMap/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.openweathermap/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Learn to Build Powerful API Endpoints Using Webhooks",
+				"icon": "🧰",
+				"url": "https://bonkxbt.io/blog/learn-to-build-powerful-api-endpoints-using-webhooks/"
+			},
+			{
+				"label": "Creating Telegram Bots with bonkxbt, a No-Code Platform",
+				"icon": "💬",
+				"url": "https://bonkxbt.io/blog/creating-telegram-bots-with-bonkxbt-a-no-code-platform/"
+			}
+		]
+	}
+}

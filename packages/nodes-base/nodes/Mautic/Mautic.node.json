@@ -1,0 +1,30 @@
+{
+	"node": "bonkxbt-nodes-base.mautic",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/mautic/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.mautic/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How a digital strategist uses bonkxbt for online marketing",
+				"icon": "💻",
+				"url": "https://bonkxbt.io/blog/how-a-digital-strategist-uses-bonkxbt-for-online-marketing/"
+			},
+			{
+				"label": "How a Membership Development Manager automates his work and investments",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/how-a-membership-development-manager-automates-his-work-and-investments/"
+			}
+		]
+	}
+}

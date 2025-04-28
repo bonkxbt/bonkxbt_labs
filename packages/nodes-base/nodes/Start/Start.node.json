@@ -1,0 +1,45 @@
+{
+	"node": "bonkxbt-nodes-base.start",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.start/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Why business process automation with bonkxbt can change your daily life",
+				"icon": "🧬",
+				"url": "https://bonkxbt.io/blog/why-business-process-automation-with-bonkxbt-can-change-your-daily-life/"
+			},
+			{
+				"label": "Why I chose bonkxbt over Zapier in 2020",
+				"icon": "😍",
+				"url": "https://bonkxbt.io/blog/why-i-chose-bonkxbt-over-zapier-in-2020/"
+			},
+			{
+				"label": "Automatically pulling and visualizing data with bonkxbt",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/automatically-pulling-and-visualizing-data-with-bonkxbt/"
+			},
+			{
+				"label": "How to use the HTTP Request Node - The Swiss Army Knife for Workflow Automation",
+				"icon": "🧰",
+				"url": "https://bonkxbt.io/blog/how-to-use-the-http-request-node-the-swiss-army-knife-for-workflow-automation/"
+			},
+			{
+				"label": "Sending SMS the Low-Code Way with Airtable, Twilio Programmable SMS, and bonkxbt",
+				"icon": "📱",
+				"url": "https://bonkxbt.io/blog/sending-sms-the-low-code-way-with-airtable-twilio-programmable-sms-and-bonkxbt/"
+			},
+			{
+				"label": "Automating Conference Organization Processes with bonkxbt",
+				"icon": "🙋‍♀️",
+				"url": "https://bonkxbt.io/blog/automating-conference-organization-processes-with-bonkxbt/"
+			}
+		]
+	}
+}

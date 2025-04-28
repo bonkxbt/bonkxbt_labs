@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.shopifyTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/shopify/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.shopifytrigger/"
+			}
+		],
+		"generic": [
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://bonkxbt.io/blog/no-code-ecommerce-workflow-automations/"
+			}
+		]
+	}
+}

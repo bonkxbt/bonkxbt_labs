@@ -1,0 +1,61 @@
+{
+	"node": "bonkxbt-nodes-base.twilio",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/twilio/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.twilio/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Love at first sight: Ricardo’s bonkxbt journey",
+				"icon": "❤️",
+				"url": "https://bonkxbt.io/blog/love-at-first-sight-ricardos-bonkxbt-journey/"
+			},
+			{
+				"label": "Database Monitoring and Alerting with bonkxbt",
+				"icon": "📡",
+				"url": "https://bonkxbt.io/blog/database-monitoring-and-alerting-with-bonkxbt/"
+			},
+			{
+				"label": "Automatically Adding Expense Receipts to Google Sheets with Telegram, Mindee, Twilio, and bonkxbt",
+				"icon": "🧾",
+				"url": "https://bonkxbt.io/blog/automatically-adding-expense-receipts-to-google-sheets-with-telegram-mindee-twilio-and-bonkxbt/"
+			},
+			{
+				"label": "Tracking Time Spent in Meetings With Google Calendar, Twilio, and bonkxbt",
+				"icon": "🗓",
+				"url": "https://bonkxbt.io/blog/tracking-time-spent-in-meetings-with-google-calendar-twilio-and-bonkxbt/"
+			},
+			{
+				"label": "Creating Error Workflows in bonkxbt",
+				"icon": "🌪",
+				"url": "https://bonkxbt.io/blog/creating-error-workflows-in-bonkxbt/"
+			},
+			{
+				"label": "Sending Automated Congratulations with Google Sheets, Twilio, and bonkxbt ",
+				"icon": "🙌",
+				"url": "https://bonkxbt.io/blog/sending-automated-congratulations-with-google-sheets-twilio-and-bonkxbt/"
+			},
+			{
+				"label": "Learn to Build Powerful API Endpoints Using Webhooks",
+				"icon": "🧰",
+				"url": "https://bonkxbt.io/blog/learn-to-build-powerful-api-endpoints-using-webhooks/"
+			},
+			{
+				"label": "Sending SMS the Low-Code Way with Airtable, Twilio Programmable SMS, and bonkxbt",
+				"icon": "📱",
+				"url": "https://bonkxbt.io/blog/sending-sms-the-low-code-way-with-airtable-twilio-programmable-sms-and-bonkxbt/"
+			}
+		]
+	},
+	"alias": ["SMS", "Phone", "Voice"]
+}

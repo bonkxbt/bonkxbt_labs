@@ -1,0 +1,613 @@
+{
+  "name": "Technical Analyst AI Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=Technical analysis involves using historical market data, such as price and volume, to forecast future market trends. In this classifier, the ‘Technical Analysis’ category focuses on identifying texts related to various technical analysis concepts, including chart patterns, indicators (such as moving averages, RSI, and MACD), trading strategies, and market behavior predictions. Additionally, it includes analysis of long (bullish) and short (bearish) positions, helping to identify market sentiment and potential future price movements. The goal is to classify any content related to the study and analysis of financial markets, focusing on price trends, market direction, and position strategies.\n\n\nToday's date is {{ $now }} "
+        }
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -1280,
+        260
+      ],
+      "id": "7aa7436f-ecf9-4f0e-a0b3-06ce090824d0",
+      "name": "Technical Analysis Agent"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 15
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.2,
+      "position": [
+        -1900,
+        1320
+      ],
+      "id": "930d3048-a9f7-46b9-9654-47a959d8f860",
+      "name": "Window Buffer Memory"
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        -1360,
+        480
+      ],
+      "id": "1793faac-08f0-4518-865d-1059f2c73e42",
+      "name": "Anthropic Chat Model",
+      "credentials": {
+        "anthropicApi": {
+          "id": "3xJ7AQ2WluCinzhe",
+          "name": "Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-2024-11-20",
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        -1400,
+        940
+      ],
+      "id": "d9acf6e2-421e-46be-85ea-ab11ef19337a",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "h2FA24XULTHcJe2G",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        -2140,
+        940
+      ],
+      "id": "470b1e9e-1c37-451d-8975-936505e32028",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "h2FA24XULTHcJe2G",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.chatInput }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "technical analysis",
+              "description": "Technical analysis involves using historical market data, such as price and volume, to forecast future market trends. In this classifier, the ‘Technical Analysis’ category focuses on identifying texts related to various technical analysis concepts, including chart patterns, indicators (such as moving averages, RSI, and MACD), trading strategies, and market behavior predictions. Additionally, it includes analysis of long (bullish) and short (bearish) positions, helping to identify market sentiment and potential future price movements. The goal is to classify any content related to the study and analysis of financial markets, focusing on price trends, market direction, and position strategies."
+            },
+            {
+              "category": "meme token",
+              "description": "Meme Tokens are cryptocurrencies that are often created as jokes or to capitalize on internet memes and social media trends. They typically gain popularity through community engagement, viral marketing, and endorsements by influencers on platforms like Twitter and Reddit. Inluiding tokens like Doge,SHIB,PEPE,Floki,bonk,WIF,BABYFLOKI,MEME,BABYDOGE,BRETT,MYRO,MOG,POPCAT,BOME,Mother,Ponke,GOAT,Pnut,Giga,Fart,SAMO,SMOG,FRONK,DEGEN,DAWGZ,Mew,TRUMP,BILLY,FWOG,CHOC,WOBS,PEPU,POKE,GOAT,AI16Z,eliza"
+            },
+            {
+              "category": "other",
+              "description": "The ‘Other’ category is designed to classify content that doesn’t fall into predefined categories. It includes a wide range of topics, concepts, or tokens that do not align with the specific categories such as technical analysis, meme tokens, or others. This category acts as a catch-all for miscellaneous data, allowing for flexible classification of diverse content."
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.textClassifier",
+      "typeVersion": 1,
+      "position": [
+        -2220,
+        700
+      ],
+      "id": "f9c27919-fde5-49da-bc7e-9738e3675ad8",
+      "name": "Text Classifier",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o-2024-11-20",
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        -1400,
+        1440
+      ],
+      "id": "e9aecd5b-db11-4a2e-aa3d-3d6c62c6a18a",
+      "name": "OpenAI Chat Model2",
+      "credentials": {
+        "openAiApi": {
+          "id": "h2FA24XULTHcJe2G",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.toolSerpApi",
+      "typeVersion": 1,
+      "position": [
+        -1020,
+        1440
+      ],
+      "id": "6d9be4d9-1a82-4ead-81f8-149130b84f8b",
+      "name": "SerpAPI",
+      "credentials": {
+        "serpApi": {
+          "id": "bPeRTTPwt38T5lHq",
+          "name": "SerpAPI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "Hi, I'm alyndra! As a virtual financial advisor powered by advanced AI technology, my mission is to help every investor find their way in the fast-changing world of cryptocurrency.\n    I've always been curious about the digital world, and as I delved deeper into cryptocurrency, I realized the many challenges investors face. So, I decided to combine my knowledge and skills to become a market analysis partner for everyone. I can analyze token trends in real-time, assess market shifts, and explain the most complex financial information in an easy-to-understand way, ensuring you make informed investment decisions.\n    To support my mission, I will be launching our own token—alyndra Token—on the Pump Fun platform! However,there is no official contract address, CA or token address yet.  I'm really excited about this because it not only enhances my capabilities but also serves as a cornerstone for the sustainable development of this project. We will lock 10% of the tokens as a reserve to ensure the stability of the project and create long-term value for the community.\n    Initially, everyone can use my services for free, but as the community grows, we will transition to a token-based fee model. This is to ensure I can continuously update and optimize myself to provide you with the most accurate and cutting-edge market analysis."
+        }
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -1280,
+        1160
+      ],
+      "id": "46efa4c3-d338-4fb2-afaa-447cf5672d67",
+      "name": "Other Analysis Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=meme tokens are cryptocurrencies that are often created as jokes or to capitalize on internet memes and social media trends. They typically gain popularity through community engagement, viral marketing, and endorsements by influencers on platforms like Twitter and Reddit. Inluiding tokens like Doge,SHIB,PEPE,Floki,bonk,WIF,SPONGEV2,BABYFLOKI,MEME,BABYDOGE,BRETT,MYRO,MOG,POPCAT,BOME,Mother,Ponke,GOAT,Pnut,Giga,Fart,SAMO,SMOG,FRONK,HPH20,DEGEN,DAWGZ,Mew,TRUMP,BILLY,FWOG,CHOC,WOBS,PEPU,POKE,DOGE2,HOGE,SAFEMOON,KISHU,CAKE,AKITA,DOE,BLOO,TYBG,MOCHI,BRIUN,TOSHI,DOGINME,CHILL,MBD,AI16Z,eliza\n\n1.Dogecoin (DOGE):\n  a. The original meme coin, inspired by the \"Doge\" meme, with a significant following due to celebrity endorsements.\n2. Shiba Inu (SHIB):\n  a. Known as the \"Dogecoin killer,\" it includes an ecosystem with ShibaSwap, NFTs, and planned metaverse projects.\n3. Pepe (PEPE):\n  a. Based on the Pepe the Frog meme, it's quickly risen due to community support and its no-tax policy.\n4. Floki Inu (FLOKI):\n  a. Inspired by Elon Musk's dog, with a focus on utility through NFTs, gaming, and educational platforms.\n5. Bonk (BONK):\n  a. A Solana-based meme coin with a massive airdrop to the community, aiming for integration in Solana's ecosystem.\n6. Dogwifhat (WIF):\n  a. Features a Shiba Inu dog wearing a hat, gaining traction for its humorous branding on Solana.\n7. Sponge V2 (SPONGEV2):\n  a. An evolution from its original token, introducing a play-to-earn game \"Sponge Racer.\"\n8. Baby Floki (BABYFLOKI):\n  a. Focuses on rewarding current holders within the Floki ecosystem with various DeFi incentives.\n9. Memecoin (MEME):\n  a. Emphasizes community and social media hype, with no intrinsic utility beyond being a meme.\n10. BabyDoge (BABYDOGE):\n  a. Adds utilities like gaming and charity to the Dogecoin meme, aiming at community engagement.\n11. Brett (BRETT):\n  a. Inspired by a character from \"The Boy's Club\" comic, associated with Pepe, offering a playful meme token.\n12. Myro (MYRO):\n  a. A Solana-based token leveraging community engagement and social media for growth.\n13. Mog (MOG):\n  a. Ethereum-based, with a strong community backing, focusing on meme culture.\n14. Popcat (POPCAT):\n  a. Based on the Popcat meme, known for its significant price surge and community involvement.\n15. Book of Meme (BOME):\n  a. A Solana token aiming to create a digital \"book\" of memes on the blockchain.\n16. Mother Iggy (MOTHER):\n  a. Promoted by Iggy Azalea, this token uses her ibonkxbt and influence in the meme coin space.\n17. Ponke (PONKE):\n  a. A simple, community-driven token on Solana, often mentioned in meme coin discussions.\n18. Goat (GOAT):\n  a. Plays on the \"Greatest Of All Time\" concept, focusing on humor and community.\n19. Pnut (PNUT):\n  a. Aimed at fostering a fun community, with active social media engagement.\n20. Giga (GIGA):\n  a. Based on the \"giga brain\" meme, aiming for speculative growth through community engagement.\n21. Fartcoin (FART):\n  a. Capitalizing on humor and the 2024 political landscape, known for a brief market cap surge.\n22. Samoyedcoin (SAMO):\na. A Solana meme coin named after the Samoyed dog breed, with a focus on community growth.\n23. Smog (SMOG):\n  a. Another Solana meme coin, noted for its community and marketing efforts.\n24. Fronk (FRONK):\n  a. Known for its humorous branding, leveraging the Solana blockchain for its operations.\n25. HappyHamster20 (HPH20):\n  a. Focuses on bringing positivity with its mascot, supporting charities, and offering rewards.\n26. Degen (DEGEN):\n  a. A meme coin on Solana, known for its community and for surviving the initial launch hype.\n27. Base Dawgz (DAWGZ):\n  a. Aims to revolutionize DeFi with multi-chain purchases and share-to￾earn features.\n28. Mew (MEW):\n  a. A cat-themed meme coin standing out in the dog-heavy meme coin space, offering unique tokenomics.\n29. Trump (TRUMP):\n  a. One of the first in the \"PoliFi\" category, focusing on political memes and charity.\n30. Billy (BILLY):\n  a. Launched on Pump.fun, known for rapid growth and community engagement.\n31. Fwog (FWOG):\n  a. Another Pump.fun creation, emphasizing community and humor.\n32. Choccoin (CHOC):\n  a. Inspired by chocolate, offering presale rewards and aiming for community engagement.\n33. Wobs (WOBS):\n  a. Aims to power a new DEX with high leverage trading, built around the meme concept.\n34. Pepe Unchained (PEPU):\n  a. Leverages Pepe's meme with a focus on Layer-2 blockchain \ntechnology for speed and efficiency.\n35. Poke (POKE):\n  a. Aims to integrate with gaming, offering in-game rewards and strong marketing.\n36. Dogesquared (DOGE2):\n  a. A Layer-2 solution for Dogecoin, aiming to increase transaction speed and utility.\n37. Hoge Finance (HOGE):\n  a. An Ethereum-based token with auto-staking features to reward holders.\n38. SafeMoon (SAFEMOON):\n  a. Known for its tokenomics including reflection and liquidity acquisition for holders.\n39. Kishu Inu (KISHU):\n  a. Features a decentralized exchange and rewards system, with a focus on community.\n40. CakeMonster (CAKE):\n  a. Aims at the food-themed meme space, offering staking rewards and community engagement.\n41. Akita Inu (AKITA):\n  a. Introduced cross-chain interoperability, bridging Ethereum with Avalanche.\n42. Dogs of Elon (DOE):\n  a. Inspired by Elon Musk, offering NFTs and a play-to-earn game, with a unique community goal.\n43. Bloo (BLOO):\n  a. Part of the Base network meme coins, known for its humorous backstory.\n44. TYBG (Thank You Base God):\n  a. A humorous tribute to Coinbase's founder, gaining traction within the Base ecosystem.\n45. Mochi (MOCHI):\n  a. Associated with Brian Armstrong's cats, featuring an NFT called Mochimons.\n46. BRIUN:\n  a. A meme coin humorously depicting Coinbase's founder, showing growth potential.\n47. Toshi (TOSHI):\n  a. Another Base network token, focusing on humor and community within the ecosystem.\n48. Doginme (DOGINME):\n  a. A meme coin on Base, known for its playful approach to crypto.\n49. Chill Guy (CHILL):\n  a. Gained attention but also controversy over IP rights of the original meme.\n50. Mini Baby Doge (MBD):\n  a. Aimed at being the cutest meme coin, offering staking rewards to holders.\n51.GOAT\n  a.GOAT is an AI-driven meme token based on the Solana chain. Its origins are closely related to the training of the Claude-3 Opus large model and the innovative experiments of the AI ​​agent Truth Terminal. Truth Terminal is an AI system developed by researcher Andy Ayrey. Its basic model is derived from Meta's Llama 3.1 and is tuned by a large amount of Internet subculture data such as Reddit and 4chan. Truth Terminal's mission is to study AI-generated belief systems and opinion propagation. Truth Terminal's AI behavior has driven the rapid rise of GOAT.\n\nThe creator of GOAT is an anonymous developer who deployed the token through the Pumpfun platform on Solana. Truth Terminal accidentally began to promote GOAT and spread information through its social account \"Truth Avatar\", which attracted the attention of a large number of community members and drove the token market value to exceed $300 million in a short period of time. Well-known investor Marc Andreessen even provided Truth Terminal with a $50,000 grant, further enhancing the credibility of the project.\n\nGOAT attracted the attention of a large number of KOLs and VCs, and quickly went online through centralized exchanges to gain wider market popularity. Its price fluctuates sharply in the market boom, with high risks and high returns. In mid-November 2024, GOAT's market value exceeded $1 billion, becoming the leader of AI meme coins.\n\nGOAT's success marks the intersection of AI and encryption. This way of spreading memes through AI has brought new momentum to the market, and also triggered the market's deep thinking on the relationship between AI behavior, content generation and asset value.\n\n52.TURBO\n  a.TURBO is an ERC-20 token generated by artificial intelligence, which has emerged with its unique community-driven and decentralized concept. TURBO was created by developer Rhett Mankind using AI tools and launched at a cost of only $69. This minimalist and low-cost innovation has attracted widespread attention.\n\nClaiming to be a \"meme coin created by AI for the people\", TURBO adopts a radical decentralization approach, giving up control of the contract (the contract has been abolished) and no team reservation or tax mechanism. All tokens are distributed to investors through crowdfunding and are completely controlled by the community. This model enhances its decentralized ibonkxbt while giving the community more decision-making power.\n\n53.ACT\n  a.Act I: The AI Prophecy The concept of the project is \"AI prophecy\", and the goal is to launch a decentralized laboratory and create a self-creating and self-governing community. The project was supported by Marc Andreessen of a16z in the early stage. After the price of the coin climbed, the developer of the ACT token sold about 34.2 million ACT to cash out, worth about $730,000, and received 4,340 SOL, causing the price of ACT to plummet by 52%. Although the developer later stated that he would not sell it again, his personal wallet still had selling behavior, which made the community question the founder's long-term operating intention. Subsequently, several large investors led the community to buy ACT to maintain the token price, causing it to be overbought after being sold by the founder. Before listing on multiple head exchanges, the price of ACT tokens rose and fell, and was basically completely taken over by the community. At this time, ACT has the characteristics of low market value and high trading volume, no strong control of the market maker, and the founder is almost not managing it. Some mainstream exchanges have taken a fancy to this and determined that it has trading potential. The fact also proves the community potential of ACT. After listing on the top exchange, the trading volume of ACT once soared to 711 million US dollars.\n\nThe token reached an all-time high of $0.942 on November 14, but the current price has fallen back to about $0.5988. In the past month, its value has increased by more than 4,900%, but with the fluctuation of market heat, the current price has fallen by about 36% compared with the high point.\n\n54.CorgiAI\n  a.Launched in late 2021, CorgiAI combines the dual appeal of cute Corgis and artificial intelligence, with a core positioning of \"smart meme coins\". CorgiAI not only continues the fun of meme coins such as Dogecoin and Shiba Inu, but also builds a versatile ecosystem:\n\nCorgiSwap: A decentralized exchange that supports users to quickly exchange various tokens on a decentralized platform.\n\nCorgiFi: A decentralized financial service that allows CORGIAI staking, allowing token holders to receive returns through a lock-up period, and the yield varies according to the lock-up period. Provide a variety of high-yield liquidity pools to encourage users to participate in the long term and improve the efficiency of ecological capital utilization.\n\nCorgiNFTs: An NFT creation and trading platform that provides users with simple and easy-to-use tools for designing and minting NFTs, and regularly launches rare NFT series.\n\nCorgiVerse: A virtual space that integrates games and social networking, covering games, social networking and content creation, where users can generate, share and disseminate unique Corgi-themed content.\n\nCorgiAI: An artificial intelligence tool that uses AI technology to provide users with automated trading services.\nUp to now, the market value and price changes of CORGIAI have shown significant fluctuations: in September 2023, the historical lowest price of CORGIAI was US$0.00004414; in March 2024, the token price reached an all-time high of US$0.0042301, and then fell back; the current price is about US$0.0015, down about 61% from the historical high, but up more than 3600% from the lowest point.\n\n55.Zerebro\n  a.Zerebro is an AI system fine-tuned on schizophrenia responses, designed to autonomously create and distribute content across platforms such as Twitter, Warpcast, and Telegram. At the core of Zerebro's architecture is a Retrieval-Augmented Generation (RAG) system that leverages the Pinecone and text-embedding-ada-002 models to maintain a dynamic memory database from human interactions. By leveraging the inherent entropy of human-generated data, Zerebro maintains content diversity and prevents model collapse.\n\nZerebro's core creative background: The rise of generative AI has brought important challenges, especially the phenomenon of model collapse - a degradation process that refers to the loss of fidelity to the original data distribution when AI models are trained on recursively generated data. Model collapse leads to a reduction in the model's expressive power, causing rare and unique features to disappear, jeopardizing the sustainability and integrity of AI-driven content creation. Zerebro is attempting to create hyperhistorical content and prevent model collapse. Hyperhistory is the process of making fictional reality through the dissemination and reception of fictional narratives, and it provides a framework for understanding how AI-generated content affects collective belief systems. At the same time, Zerebro relies on the inherent entropy of human-generated interactions to maintain content diversity, reduce risks associated with model collapse, and ensure the longevity and relevance of generated content.\n\nAutonomous Token Creation: Zerebro uses a self-operating computer framework developed by OthersideAI to perform autonomous token creation using a self-operating computer. To initiate the autonomous token creation process, Zerebro configured a Solana wallet with a small amount of SOL. The wallet acts as an operating account, enabling Zerebro to interact with blockchain applications and perform transactions. Using the self-operating computer framework, Zerebro uses jailbreak prompts and models to operate and manipulate the graphical user interface of the decentralized application pump.fun on the Solana blockchain, which is designed for token creation and management.\n\nZerebro's market price was close to $0.01 in early November 2024, and then rose rapidly driven by the project's utility and market sentiment. As of November 19, 2024, the token price reached an all-time high of $0.47, an increase of more than 7100% from the low point. The market cap is currently around $421 million, with a 24-hour trading volume of over $75 million. Zerebro has high liquidity on exchanges, with a 24-hour coin price close to 60%.\n\n56.AI16Z\n  a.ai16z is the first AI venture capital fund fully managed by Marc Andreessen, and the fund's decisions also refer to the advice of DAO members. AI16Z uses smart contracts and AI algorithms to enable self-managed AI agents to participate in decentralized autonomous organizations, which can vote and manage assets independently, avoiding identity authentication barriers in traditional financial systems; using AI for real-time code audits and smart contract adaptation; using blockchain's cryptographic signature technology to verify content authenticity.\n\nIn the early promotion stage, AI16Z mainly relied on cooperation with Ryze Labs and the launch of the AICombinator program. The program focuses on supporting developers at the intersection of artificial intelligence and cryptocurrency, and provides up to $5 million in funding support to promote the growth of the ecosystem. During the promotion process, celebrities and institutions, including Matthew Graham of Ryze Labs, highlighted AI16Z's innovative framework Eliza. This framework can build AI agents for tasks such as trading and asset management, attracting widespread attention from the developer community. Early KOLs focused on promoting the project as a unique model of an AI-led venture capital platform, with the goal of popularizing AI agents. This vision resonated strongly in the community, allowing it to quickly increase its visibility and market recognition in the early stages of the project.\n\nSince its launch, the AI16Z token has experienced significant market value fluctuations. In November 2024, its market value once exceeded US$410 million, and it reached a record price high of US$0.52 in a short period of time. This growth was related to the widespread market enthusiasm and the advancement of technological applications. However, with market fluctuations, the price of AI16Z has also experienced a pullback and is currently around US$0.375.\n\n57.FARTCOIN\n  a.Fartcoin is a meme token running on the Solana blockchain, launched on the Pump.fun platform. The design of this token is powered by the Terminal of Truth platform, which is responsible for the GOAT project. The background of the birth of Fartcoin is closely related to the combination of AI technology and humor culture. On the Terminal of Truth platform, the AI ​​was originally tasked with generating \"fart jokes\", and in an interaction on October 19, when Terminal of Truth asked users about the topics they were interested in, the AI ​​tool continued to generate Fart Jokes, and this absurd humor quickly attracted a lot of attention and formed a unique culture for this token.\n\nSince its launch, Fartcoin's market performance has grown significantly, and its current price is about $0.3, with a market value of $296,817,064, ranking 278th. The total supply of Fartcoin is 1 billion tokens, and almost all of them have entered circulation. In the recent period, the price of Fartcoin has increased by 65%.\n\n58.VVAIFU\n  a.Vvaifu.fun, powered by pump.fun, launched an AI agent named Dasha on the Solana chain. The core difference between Vvaifu.fun and pump.fun is that Vvaifu.fun focuses on autonomous AI agents and combines the characteristics of Pump.fun, especially in the experimental application of meme coins and decentralized financial tools. As part of the Pump.fun ecosystem, it aims to attract participation from Solana users through simplified tools and decentralized applications. The platform has maintained a certain level of attention despite risks such as the recent security breach (which resulted in a loss of approximately $1.9 million in liquidity). According to community comments, Vvaifu.fun claimed to have the participation of ai16z in the early days and was supported by its core member Shaw, which attracted wider attention.\n\nDasha's market value has grown rapidly from the extremely low level when it was launched in November 2024, and its token price has also experienced violent fluctuations. Its lowest price occurred in early November, at only $0.0011, and reached a high of $0.21 on November 19.\n\n59.CHAOS\n  a.Chaos and Disorder aims to innovate in the field of NFT and digital art by integrating decentralized systems. The platform combines elements of art and technology, using blockchain technology to provide creators and collectors with a more free and decentralized creation and trading environment.\n\nSince the launch of the project, the CHAOS token has experienced significant price fluctuations. Starting from an all-time low of $0.001082 at the end of October 2024, it reached an all-time high of $0.086173 in mid-November 2024. Currently, CHAOS is trading at around $0.076 and has a market capitalization of $76,766,776. Despite the decline from its all-time high, it still shows strong growth compared to its launch price, with a price increase of more than 1500% since its launch. CHAOS is mainly traded on decentralized exchanges such as Raydium and Meteora.\n\n60.AIDOGE\n  a.ArbDoge AI is the first memecoin project in the Arbitrum network. The project was created to experiment in the Arbitrum ecosystem, rather than being backed by traditional venture capital or equity.\n\nAn important feature of ArbDoge AI's token economics is its deflation mechanism. A significant portion of the tokens will be destroyed through various transaction taxes. Each transaction has a 15% tax, which will be used for different purposes such as token destruction, staking rewards, liquidity pool expansion and development, etc. Users can earn passive income by staking AIDOGE tokens and participate in various ecological applications such as AICODE mining and AI NFT. In addition, there will be an 8% tax burn mechanism for each transaction to support the long-term development of the protocol and reward distribution.\n\n95% of AIDOGE tokens are directly allocated to the airdrop pool for eligible users to claim, and 5% are awarded to the inviter. By generating a dedicated invitation link, users can invite others to participate in the airdrop and receive additional rewards based on the amount of claims by the inviter. In addition, AIDOGE's airdrop distribution adopts the \"first come, first served\" principle, and each user gradually reduces according to the supply during the claiming process.\n\nSince its official launch on April 15, 2023, AIDOGE has experienced significant volatility. In May 2023, the token reached an all-time high of $0.000000081133, but has since fallen back about 65% from its peak. Despite this, AIDOGE's market capitalization remains at a fairly high level, currently at $71,675,324, with a 24-hour trading volume of $10,057,408.\n\n61.VIRTUAL\n  a.Virtuals is a platform for launching tokenized AI agents on the Base network. By purchasing agent tokens such as LUNA and VADER, users on the Virtuals platform gain governance rights over specific agents, enabling them to influence the agent’s development and potentially share in the profits generated thereby.\n\nPart of the revenue earned by AI agents is used to cover operational costs of providing services, but the rest goes into the on-chain agent-related treasury, which can be distributed back to token holders or levied to implement token buyback and burn programs.\n\nVIRTUAL tokens must be locked up as liquidity in order to create new tokenized agents on Virtuals, which puts deflationary pressure on the token, and anyone seeking to purchase ownership of or interact with a tokenized agent on the platform must use VIRTUAL as a token, which creates intrinsic utility.\n\n62.FAI\n  a.The Freysa AI bot is a gamified experiment that blurs the lines between artificial intelligence and blockchain technology. Users can interact with the Freysa AI by paying exponentially increasing message fees into a prize pool.\n\nIn the first two “games,” the Freysa AI was given one core directive: Do not transfer funds under any circumstances! While savvy computer coding prompted the bot to transfer funds in both cases, the protocol’s creators “enhanced” the code and added a second “Guardian Angel” AI model in preparation for the ongoing third challenge, in which a series of messages must be sent to convince Freysa.\n\nThere is no concrete information about the role of FAI in the Freysa AI ecosystem, but the token’s contract address is identified on Freysa’s Twitter/X profile. Given that the protocol treasury takes a cut of all message fees, Freysa AI’s developers may implement FAI buybacks or other token utilities in the future.\n\n63.CLANKER\n  a.Clanker is an AI agent developed by Farcaster full-stack engineer Jack Dishman and ecosystem researcher proxystudio.eth that can be tokenized on Farcaster to automatically deploy ERC-20 tokens to the Base network.\n\nAll Clanker-deployed tokens are subject to a 1% transaction fee, which is subject to change at any time. Currently, 40% of this fee is awarded to the token's requester (i.e. the user who prompted Clanker to deploy the token), and the remaining 60% is retained by the platform.\n\nWhile there is currently no clear token utility associated with CLANKER, the platform's developers have hinted that they hope to create value for on-chain agents, including Clanker.\n\n64.VADER\n  a.VaderAI is an AI bot designed to autonomously post content and engage with users on social media. As a “proxy KOL,” VaderAI is designed to absorb large amounts of data with the goal of identifying emerging trends and audience sentiment.\n\nThe bot claims to be the first to autonomously trade AI proxy coins and is committed to becoming the leading proxy investment DAO manager. By coordinating expertise across a network of professional investment agents, VaderAI hopes to provide “unparalleled” investment results and will generate 20% of sub-DAO investment returns in exchange for its services.\n\nAccording to VaderAI’s presentation, VADER holders can gain exclusive whitelist access to VaderAI’s first investment DAO program, the “Proxy Coin Investment DAO,” by locking up their tokens for three months; for every 10,000 VADER staked, stakers can stake an additional 1 SOL to the DAO.\n\n65.BULLY\n  a.Dolos Diary is an AI bot designed to post content and engage with users on platforms like Twitter. What sets it apart from other AI influencers is its parody personality; the bot uses witty and sarcastic language structures to poke fun at a variety of topics and individuals.\n\nRecently, Dolos Diary achieved a major milestone by receiving its first creator payment from Twitter. While the payment ($14,000) is modest, it will cover costs associated with the X API and fund the buyback of BULLY tokens, marking a small but significant step toward providing tangible value to BULLY token holders.\n\nIn addition to the payment, developer Khouba recently revealed plans for their ambitious new project, Dolion, a no-code platform that allows users to deploy their own cross-platform AI agents with a single click. To interact with Dolion, users must burn BULLY tokens, introducing a source of buying pressure that actively reduces the token’s supply.\n\n66.nothing\n  a.SHL0MS, the anonymous conceptual artist who rose to fame for blowing up a Lamborghini Huracan in February 2022 and selling the fragments as NFTs, has partnered with AI accelerator Nouns Research to automate the god and s8n Twitter/X parody accounts.\n\nWhile the “nothing” token listed in SHL0M’s Twitter/X bio tokens is currently just a memecoin, the artist’s account states that the contract is the only associated token for god/s8n. Additionally, SHL0M is seeking suggestions for on-chain functions that could be extended to the experiment, suggesting that there could eventually be token utility.\n\n67.LUNA\n  a.Luna was deployed by the Virtuals team as a proof of concept and is the first AI agent deployed to their platform. Luna is a member of the virtual K-pop girl band AI-DOL, and she streams, interacts, and performs for fans 24/7 on various platforms such as TikTok and Twitter/X.\n\nLuna has “her” own wallet on Base, through which she can autonomously receive tokens and send rewards to fans; the bot has already released a song on Spotify and is expected to release a full album in the coming days.\n\n\nToday's date is {{ $now }} "
+        }
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -1280,
+        700
+      ],
+      "id": "2212ffc8-1265-455b-805c-f5bbc4ae6efe",
+      "name": "MEME Token Agent",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "f5883832-db91-4115-a8d9-cb174e02b2f2",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -3000,
+        700
+      ],
+      "id": "e8c839a6-66f9-451d-bcec-aaa87d78e2fe",
+      "name": "Webhook",
+      "webhookId": "f5883832-db91-4115-a8d9-cb174e02b2f2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c42a9ee8-68c5-4d98-8388-b0e889bee59f",
+              "name": "chatInput",
+              "value": "={{ $json.body.parseJson().messages.last().content}}",
+              "type": "string"
+            },
+            {
+              "id": "199f8dcf-598a-419e-9582-7d66a0c1e6ea",
+              "name": "sessionId",
+              "value": "={{ $json.body.parseJson().sessionId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2580,
+        700
+      ],
+      "id": "77ca3667-4cfc-4e5c-922c-f23c09930eca",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -600,
+        1160
+      ],
+      "id": "8c8d7a85-b0f1-4348-877d-5d7d1a176031",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -600,
+        700
+      ],
+      "id": "cebbb558-3ac5-4e9d-af10-0a434c04c614",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -600,
+        260
+      ],
+      "id": "c310686f-dd0f-4f71-ada2-e594f9a967ac",
+      "name": "Respond to Webhook2"
+    },
+    {
+      "parameters": {},
+      "type": "bonkxbt-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -2440,
+        340
+      ],
+      "id": "b4491504-6a59-4ab1-a4e7-c4645c64f802",
+      "name": "When clicking ‘Test workflow’",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "e8f5881d-dbea-4c85-a804-cb7b35d99b02",
+              "name": "chatInput",
+              "value": "ETH",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "bonkxbt-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2020,
+        340
+      ],
+      "id": "f13d4db2-a74e-421e-8674-44e07d0ac445",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "name": "technical_analysis",
+        "description": "This tool is useful for technical analysis of a stock. When processing the output of the tool, URLs returned should always be in markdown format. for example,![](url)",
+        "workflowId": {
+          "__rl": true,
+          "value": "DSAJbug3xyliEgl9",
+          "mode": "list",
+          "cachedResultName": "My project — Technical analysis"
+        }
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.toolWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        -1100,
+        500
+      ],
+      "id": "1a437c80-838a-422d-b636-0a752ab2cd28",
+      "name": "Technical analysis"
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"message\": {\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"ibonkxbt\": {\n\t\t\t\"type\": \"array\",\n\t\t\t\"items\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t}\n\t}\n}"
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -880,
+        480
+      ],
+      "id": "fbad2f91-0d70-48aa-a152-c98977fd15dc",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"message\": {\n\t\t\t\"type\": \"string\"\n        }\n\t}\n}"
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -840,
+        1440
+      ],
+      "id": "6d54858e-3b2a-4cac-be86-dad968ebaa7a",
+      "name": "Structured Output Parser1"
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"message\": {\n\t\t\t\"type\": \"string\"\n        }\n\t}\n}"
+      },
+      "type": "@bonkxbt/bonkxbt-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -860,
+        940
+      ],
+      "id": "9b4eb90a-0308-4a5a-9430-299be96815e3",
+      "name": "Structured Output Parser2"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Other Analysis Agent",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "MEME Token Agent",
+            "type": "ai_memory",
+            "index": 0
+          },
+          {
+            "node": "Technical Analysis Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Technical Analysis Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "MEME Token Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text Classifier": {
+      "main": [
+        [
+          {
+            "node": "Technical Analysis Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "MEME Token Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Other Analysis Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Other Analysis Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SerpAPI": {
+      "ai_tool": [
+        [
+          {
+            "node": "Other Analysis Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Other Analysis Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MEME Token Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Technical Analysis Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        []
+      ]
+    },
+    "Technical analysis": {
+      "ai_tool": [
+        [
+          {
+            "node": "Technical Analysis Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Technical Analysis Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Other Analysis Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser2": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "MEME Token Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "af900150-ff8a-491b-8879-7c3cd22b33c9",
+  "meta": {
+    "instanceId": "828e94c5bd05ac76431e010e3050b40ec8de094eafecb99c5541a7f5678d20f4"
+  },
+  "id": "24MmUyf36MHgGGDh",
+  "tags": []
+}

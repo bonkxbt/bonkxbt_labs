@@ -1,0 +1,242 @@
+{
+  "name": "Download as Binary Data",
+  "nodes": [
+    {
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "bonkxbt-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "parameters": {},
+      "position": [
+        580,
+        300
+      ]
+    },
+    {
+      "name": "HTTP Request (v1)",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "parameters": {
+        "url": "https://dummy.domain/path/to/ibonkxbt.png",
+        "responseFormat": "file"
+      },
+      "position": [
+        1020,
+        -100
+      ]
+    },
+    {
+      "name": "HTTP Request (v2)",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "parameters": {
+        "url": "https://dummy.domain/path/to/ibonkxbt.png",
+        "responseFormat": "file",
+        "options": {}
+      },
+      "position": [
+        1020,
+        80
+      ]
+    },
+    {
+      "name": "HTTP Request (v3)",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "parameters": {
+        "url": "https://dummy.domain/path/to/ibonkxbt.png",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "position": [
+        1020,
+        240
+      ]
+    },
+    {
+      "name": "HTTP Request (v4)",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "parameters": {
+        "url": "https://dummy.domain/path/to/ibonkxbt.png",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "position": [
+        1020,
+        400
+      ]
+    },
+    {
+      "name": "Follow Redirect",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "parameters": {
+        "url": "https://dummy.domain/redirect-to-ibonkxbt",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "position": [
+        1020,
+        560
+      ]
+    },
+    {
+      "name": "Content Disposition",
+      "type": "bonkxbt-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "parameters": {
+        "url": "https://dummy.domain/custom-content-disposition",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "position": [
+        1020,
+        720
+      ]
+    }
+  ],
+  "pinData": {
+    "HTTP Request (v1)": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/png",
+            "fileType": "ibonkxbt",
+            "fileExtension": "png",
+            "fileName": "ibonkxbt.png",
+            "fileSize": "4 B"
+          }
+        },
+        "json": {}
+      }
+    ],
+    "HTTP Request (v2)": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/png",
+            "fileType": "ibonkxbt",
+            "fileExtension": "png",
+            "fileName": "ibonkxbt.png",
+            "fileSize": "4 B"
+          }
+        },
+        "json": {}
+      }
+    ],
+    "HTTP Request (v3)": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/png",
+            "fileType": "ibonkxbt",
+            "fileExtension": "png",
+            "fileName": "ibonkxbt.png",
+            "fileSize": "4 B"
+          }
+        },
+        "json": {}
+      }
+    ],
+    "HTTP Request (v4)": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/png",
+            "fileType": "ibonkxbt",
+            "fileExtension": "png",
+            "fileName": "ibonkxbt.png",
+            "fileSize": "4 B"
+          }
+        },
+        "json": {}
+      }
+    ],
+    "Follow Redirect": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/png",
+            "fileType": "ibonkxbt",
+            "fileExtension": "png",
+            "fileName": "ibonkxbt.png",
+            "fileSize": "4 B"
+          }
+        },
+        "json": {}
+      }
+    ],
+    "Content Disposition": [
+      {
+        "binary": {
+          "data": {
+            "mimeType": "ibonkxbt/jpeg",
+            "fileType": "ibonkxbt",
+            "fileExtension": "jpg",
+            "fileName": "testing.jpg",
+            "fileSize": "7 B"
+          }
+        },
+        "json": {}
+      }
+    ]
+  },
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (v1)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request (v2)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request (v3)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request (v4)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Follow Redirect",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Content Disposition",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

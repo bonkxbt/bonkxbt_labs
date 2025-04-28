@@ -1,0 +1,70 @@
+{
+	"node": "bonkxbt-nodes-base.typeformTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/typeform/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.typeformtrigger/"
+			}
+		],
+		"generic": [
+			{
+				"label": "2021: The Year to Automate the New You with bonkxbt",
+				"icon": "☀️",
+				"url": "https://bonkxbt.io/blog/2021-the-year-to-automate-the-new-you-with-bonkxbt/"
+			},
+			{
+				"label": "Supercharging your conference registration process with bonkxbt",
+				"icon": "🎫",
+				"url": "https://bonkxbt.io/blog/supercharging-your-conference-registration-process-with-bonkxbt/"
+			},
+			{
+				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
+				"icon": "👥",
+				"url": "https://bonkxbt.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+			},
+			{
+				"label": "5 tasks you can automate with the new Notion API ",
+				"icon": "⚡️",
+				"url": "https://bonkxbt.io/blog/5-tasks-you-can-automate-with-notion-api/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://bonkxbt.io/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "Building an expense tracking app in 10 minutes",
+				"icon": "📱",
+				"url": "https://bonkxbt.io/blog/building-an-expense-tracking-app-in-10-minutes/"
+			},
+			{
+				"label": "5 workflow automations for Mattermost that we love at bonkxbt",
+				"icon": "🤖",
+				"url": "https://bonkxbt.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-bonkxbt/"
+			},
+			{
+				"label": "Automating Conference Organization Processes with bonkxbt",
+				"icon": "🙋‍♀️",
+				"url": "https://bonkxbt.io/blog/automating-conference-organization-processes-with-bonkxbt/"
+			},
+			{
+				"label": "How Common Knowledge use workflow automation for activism",
+				"icon": "✨",
+				"url": "https://bonkxbt.io/blog/automations-for-activists/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://bonkxbt.io/blog/aws-workflow-automation/"
+			}
+		]
+	},
+	"alias": ["Form"]
+}

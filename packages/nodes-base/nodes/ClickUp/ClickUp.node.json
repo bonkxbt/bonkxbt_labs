@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.clickUp",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/clickUp/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.clickup/"
+			}
+		],
+		"generic": [
+			{
+				"label": "2021: The Year to Automate the New You with bonkxbt",
+				"icon": "☀️",
+				"url": "https://bonkxbt.io/blog/2021-the-year-to-automate-the-new-you-with-bonkxbt/"
+			}
+		]
+	}
+}

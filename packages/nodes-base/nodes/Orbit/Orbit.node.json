@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.orbit",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Analytics"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/orbit/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.orbit/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Migrating Community Metrics to Orbit using bonkxbt",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/migrating-community-metrics-to-orbit-using-bonkxbt/"
+			}
+		]
+	}
+}

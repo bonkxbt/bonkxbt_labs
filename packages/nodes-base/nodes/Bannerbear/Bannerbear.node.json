@@ -1,0 +1,35 @@
+{
+	"node": "bonkxbt-nodes-base.bannerbear",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/bannerbear/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.bannerbear/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Automate Designs with Bannerbear and bonkxbt",
+				"icon": "🎨",
+				"url": "https://bonkxbt.io/blog/automate-designs-with-bannerbear-and-bonkxbt/"
+			},
+			{
+				"label": "Automating Conference Organization Processes with bonkxbt",
+				"icon": "🙋‍♀️",
+				"url": "https://bonkxbt.io/blog/automating-conference-organization-processes-with-bonkxbt/"
+			},
+			{
+				"label": "Benefits of automation and bonkxbt: An interview with HubSpot's Hugh Durkin",
+				"icon": "🎖",
+				"url": "https://bonkxbt.io/blog/benefits-of-automation-and-bonkxbt-an-interview-with-hubspots-hugh-durkin/"
+			}
+		]
+	}
+}

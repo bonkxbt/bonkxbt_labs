@@ -1,0 +1,29 @@
+{
+	"node": "bonkxbt-nodes-base.jira",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/jira/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.jira/"
+			}
+		],
+		"generic": [
+			{
+				"label": "5 workflow automations for Mattermost that we love at bonkxbt",
+				"icon": "🤖",
+				"url": "https://bonkxbt.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-bonkxbt/"
+			},
+			{
+				"label": "How to automate every step of an incident response workflow",
+				"url": "https://bonkxbt.io/blog/creating-custom-incident-response-workflows-with-bonkxbt/"
+			}
+		]
+	}
+}

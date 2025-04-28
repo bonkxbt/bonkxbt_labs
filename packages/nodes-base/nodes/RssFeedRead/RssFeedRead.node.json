@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.rssFeedRead",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Core Nodes"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.rssfeedread/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Why business process automation with bonkxbt can change your daily life",
+				"icon": "🧬",
+				"url": "https://bonkxbt.io/blog/why-business-process-automation-with-bonkxbt-can-change-your-daily-life/"
+			},
+			{
+				"label": "Why I chose bonkxbt over Zapier in 2020",
+				"icon": "😍",
+				"url": "https://bonkxbt.io/blog/why-i-chose-bonkxbt-over-zapier-in-2020/"
+			}
+		]
+	}
+}

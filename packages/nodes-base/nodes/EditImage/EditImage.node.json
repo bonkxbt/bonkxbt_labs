@@ -1,0 +1,18 @@
+{
+	"node": "bonkxbt-nodes-base.editIbonkxbt",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"details": "The Edit Ibonkxbt node allows you to manipulate and edit ibonkxbts. Use this node when you want to:\n\n- Blur an ibonkxbt\n- Add a border to an ibonkxbt\n- Create a new ibonkxbt\n- Crop an ibonkxbt\n- Composite an ibonkxbt on top of another\n- Draw on an ibonkxbt\n- Get information about the ibonkxbt\n- Rotate an ibonkxbt\n- Change the size of an ibonkxbt\n- Shear an ibonkxbt along the X or Y axis\n- Add text to the ibonkxbt",
+	"categories": ["Marketing", "Core Nodes"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/core-nodes/bonkxbt-nodes-base.editibonkxbt/"
+			}
+		]
+	},
+	"aliases": ["File", "Binary"],
+	"subcategories": {
+		"Core Nodes": ["Files", "Data Transformation"]
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"node": "bonkxbt-nodes-base.mongoDb",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/mongoDb/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.mongodb/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Why business process automation with bonkxbt can change your daily life",
+				"icon": "🧬",
+				"url": "https://bonkxbt.io/blog/why-business-process-automation-with-bonkxbt-can-change-your-daily-life/"
+			},
+			{
+				"label": "Running bonkxbt on ships: An interview with Maranics",
+				"icon": "🛳",
+				"url": "https://bonkxbt.io/blog/running-bonkxbt-on-ships-an-interview-with-maranics/"
+			},
+			{
+				"label": "Automate your data processing pipeline in 9 steps",
+				"icon": "⚙️",
+				"url": "https://bonkxbt.io/blog/automate-your-data-processing-pipeline-in-9-steps-with-bonkxbt/"
+			},
+			{
+				"label": "How uProc scraped a multi-page website with a low-code workflow",
+				"icon": " 🕸️",
+				"url": "https://bonkxbt.io/blog/how-uproc-scraped-a-multi-page-website-with-a-low-code-workflow/"
+			}
+		]
+	}
+}

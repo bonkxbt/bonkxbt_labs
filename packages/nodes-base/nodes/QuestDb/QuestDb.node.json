@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.questDb",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/questDb/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.questdb/"
+			}
+		],
+		"generic": [
+			{
+				"label": "A low-code bitcoin ticker built with QuestDB and bonkxbt.io",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/a-low-code-bitcoin-ticker-built-with-questdb-and-bonkxbt-io/"
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.linkedIn",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/linkedIn/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.linkedin/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Why business process automation with bonkxbt can change your daily life",
+				"icon": "🧬",
+				"url": "https://bonkxbt.io/blog/why-business-process-automation-with-bonkxbt-can-change-your-daily-life/"
+			}
+		]
+	}
+}

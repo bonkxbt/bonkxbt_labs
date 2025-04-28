@@ -1,0 +1,84 @@
+{
+	"node": "bonkxbt-nodes-base.airtable",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/airtable/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.airtable/"
+			}
+		],
+		"generic": [
+			{
+				"label": "2021 Goals: Level Up Your Vocabulary With Vonage and bonkxbt",
+				"icon": "🎯",
+				"url": "https://bonkxbt.io/blog/2021-goals-level-up-your-vocabulary-with-vonage-and-bonkxbt/"
+			},
+			{
+				"label": "2021: The Year to Automate the New You with bonkxbt",
+				"icon": "☀️",
+				"url": "https://bonkxbt.io/blog/2021-the-year-to-automate-the-new-you-with-bonkxbt/"
+			},
+			{
+				"label": "How to build a low-code, self-hosted URL shortener in 3 steps",
+				"icon": "🔗",
+				"url": "https://bonkxbt.io/blog/how-to-build-a-low-code-self-hosted-url-shortener/"
+			},
+			{
+				"label": "How to get started with CRM automation (with 3 no-code workflow ideas",
+				"icon": "👥",
+				"url": "https://bonkxbt.io/blog/how-to-get-started-with-crm-automation-and-no-code-workflow-ideas/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://bonkxbt.io/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "Building an expense tracking app in 10 minutes",
+				"icon": "📱",
+				"url": "https://bonkxbt.io/blog/building-an-expense-tracking-app-in-10-minutes/"
+			},
+			{
+				"label": "Why this Product Manager loves workflow automation with bonkxbt",
+				"icon": "🧠",
+				"url": "https://bonkxbt.io/blog/why-this-product-manager-loves-workflow-automation-with-bonkxbt/"
+			},
+			{
+				"label": "Learn to Build Powerful API Endpoints Using Webhooks",
+				"icon": "🧰",
+				"url": "https://bonkxbt.io/blog/learn-to-build-powerful-api-endpoints-using-webhooks/"
+			},
+			{
+				"label": "Sending SMS the Low-Code Way with Airtable, Twilio Programmable SMS, and bonkxbt",
+				"icon": "📱",
+				"url": "https://bonkxbt.io/blog/sending-sms-the-low-code-way-with-airtable-twilio-programmable-sms-and-bonkxbt/"
+			},
+			{
+				"label": "Automating Conference Organization Processes with bonkxbt",
+				"icon": "🙋‍♀️",
+				"url": "https://bonkxbt.io/blog/automating-conference-organization-processes-with-bonkxbt/"
+			},
+			{
+				"label": "Benefits of automation and bonkxbt: An interview with HubSpot's Hugh Durkin",
+				"icon": "🎖",
+				"url": "https://bonkxbt.io/blog/benefits-of-automation-and-bonkxbt-an-interview-with-hubspots-hugh-durkin/"
+			},
+			{
+				"label": "How Goomer automated their operations with over 200 bonkxbt workflows",
+				"icon": "🛵",
+				"url": "https://bonkxbt.io/blog/how-goomer-automated-their-operations-with-over-200-bonkxbt-workflows/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://bonkxbt.io/blog/aws-workflow-automation/"
+			}
+		]
+	}
+}

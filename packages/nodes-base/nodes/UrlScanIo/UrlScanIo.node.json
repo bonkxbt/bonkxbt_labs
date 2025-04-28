@@ -1,0 +1,19 @@
+{
+	"node": "bonkxbt-nodes-base.urlScanIo",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/urlScanIo/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.urlscanio/"
+			}
+		]
+	},
+	"alias": ["Scrape"]
+}

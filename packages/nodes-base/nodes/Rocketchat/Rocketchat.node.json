@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.rocketchat",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/rocketchat/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.rocketchat/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Automate Designs with Bannerbear and bonkxbt",
+				"icon": "🎨",
+				"url": "https://bonkxbt.io/blog/automate-designs-with-bannerbear-and-bonkxbt/"
+			}
+		]
+	}
+}

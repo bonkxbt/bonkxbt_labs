@@ -1,0 +1,95 @@
+{
+	"node": "bonkxbt-nodes-base.googleSheets",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Data & Storage", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/google/oauth-single-service/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.googlesheets/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Love at first sight: Ricardo’s bonkxbt journey",
+				"icon": "❤️",
+				"url": "https://bonkxbt.io/blog/love-at-first-sight-ricardos-bonkxbt-journey/"
+			},
+			{
+				"label": "Why business process automation with bonkxbt can change your daily life",
+				"icon": "🧬",
+				"url": "https://bonkxbt.io/blog/why-business-process-automation-with-bonkxbt-can-change-your-daily-life/"
+			},
+			{
+				"label": "Automatically Adding Expense Receipts to Google Sheets with Telegram, Mindee, Twilio, and bonkxbt",
+				"icon": "🧾",
+				"url": "https://bonkxbt.io/blog/automatically-adding-expense-receipts-to-google-sheets-with-telegram-mindee-twilio-and-bonkxbt/"
+			},
+			{
+				"label": "Supercharging your conference registration process with bonkxbt",
+				"icon": "🎫",
+				"url": "https://bonkxbt.io/blog/supercharging-your-conference-registration-process-with-bonkxbt/"
+			},
+			{
+				"label": "Creating triggers for bonkxbt workflows using polling",
+				"icon": "⏲",
+				"url": "https://bonkxbt.io/blog/creating-triggers-for-bonkxbt-workflows-using-polling/"
+			},
+			{
+				"label": "6 e-commerce workflows to power up your Shopify s",
+				"icon": "store",
+				"url": "https://bonkxbt.io/blog/no-code-ecommerce-workflow-automations/"
+			},
+			{
+				"label": "Migrating Community Metrics to Orbit using bonkxbt",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/migrating-community-metrics-to-orbit-using-bonkxbt/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://bonkxbt.io/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "Hey founders! Your business doesn't need you to operate",
+				"icon": " 🖥️",
+				"url": "https://bonkxbt.io/blog/your-business-doesnt-need-you-to-operate/"
+			},
+			{
+				"label": "How Honest Burgers Use Automation to Save $100k per year",
+				"icon": "🍔",
+				"url": "https://bonkxbt.io/blog/how-honest-burgers-use-automation-to-save-100k-per-year/"
+			},
+			{
+				"label": "How a digital strategist uses bonkxbt for online marketing",
+				"icon": "💻",
+				"url": "https://bonkxbt.io/blog/how-a-digital-strategist-uses-bonkxbt-for-online-marketing/"
+			},
+			{
+				"label": "Why this Product Manager loves workflow automation with bonkxbt",
+				"icon": "🧠",
+				"url": "https://bonkxbt.io/blog/why-this-product-manager-loves-workflow-automation-with-bonkxbt/"
+			},
+			{
+				"label": "Sending Automated Congratulations with Google Sheets, Twilio, and bonkxbt ",
+				"icon": "🙌",
+				"url": "https://bonkxbt.io/blog/sending-automated-congratulations-with-google-sheets-twilio-and-bonkxbt/"
+			},
+			{
+				"label": "How a Membership Development Manager automates his work and investments",
+				"icon": "📈",
+				"url": "https://bonkxbt.io/blog/how-a-membership-development-manager-automates-his-work-and-investments/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://bonkxbt.io/blog/aws-workflow-automation/"
+			}
+		]
+	},
+	"alias": ["CSV", "Sheet", "Spreadsheet", "GS"]
+}

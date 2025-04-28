@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.stripeTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Finance & Accounting", "Sales"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/stripe/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.stripetrigger/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Automate your customer journey with bonkxbt: An interview with Blent.ai",
+				"icon": "🚀",
+				"url": "https://bonkxbt.io/blog/automate-your-customer-journey-with-bonkxbt-an-interview-with-blent-ai/"
+			}
+		]
+	}
+}

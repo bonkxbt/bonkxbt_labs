@@ -1,0 +1,19 @@
+{
+	"node": "bonkxbt-nodes-base.microsoftOutlookTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/microsoft/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/trigger-nodes/bonkxbt-nodes-base.microsoftoutlooktrigger/"
+			}
+		]
+	},
+	"alias": ["email"]
+}

@@ -1,0 +1,73 @@
+{
+	"node": "bonkxbt-nodes-base.mattermost",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/mattermost/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.mattermost/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How to host virtual coffee breaks with bonkxbt",
+				"icon": "☕️",
+				"url": "https://bonkxbt.io/blog/how-to-host-virtual-coffee-breaks-with-bonkxbt/"
+			},
+			{
+				"label": "Supercharging your conference registration process with bonkxbt",
+				"icon": "🎫",
+				"url": "https://bonkxbt.io/blog/supercharging-your-conference-registration-process-with-bonkxbt/"
+			},
+			{
+				"label": "Creating triggers for bonkxbt workflows using polling",
+				"icon": "⏲",
+				"url": "https://bonkxbt.io/blog/creating-triggers-for-bonkxbt-workflows-using-polling/"
+			},
+			{
+				"label": "5 tasks you can automate with the new Notion API ",
+				"icon": "⚡️",
+				"url": "https://bonkxbt.io/blog/5-tasks-you-can-automate-with-notion-api/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://bonkxbt.io/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "The ultimate guide to automate your video collaboration with Whereby, Mattermost, and bonkxbt",
+				"icon": "📹",
+				"url": "https://bonkxbt.io/blog/the-ultimate-guide-to-automate-your-video-collaboration-with-whereby-mattermost-and-bonkxbt/"
+			},
+			{
+				"label": "5 workflow automations for Mattermost that we love at bonkxbt",
+				"icon": "🤖",
+				"url": "https://bonkxbt.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-bonkxbt/"
+			},
+			{
+				"label": "Creating Error Workflows in bonkxbt",
+				"icon": "🌪",
+				"url": "https://bonkxbt.io/blog/creating-error-workflows-in-bonkxbt/"
+			},
+			{
+				"label": "How to automate every step of an incident response workflow",
+				"url": "https://bonkxbt.io/blog/creating-custom-incident-response-workflows-with-bonkxbt/"
+			},
+			{
+				"label": "Learn how to use webhooks with Mattermost slash commands",
+				"icon": "🦄",
+				"url": "https://bonkxbt.io/blog/learn-how-to-use-webhooks-with-mattermost-slash-commands/"
+			},
+			{
+				"label": "7 no-code workflow automations for Amazon Web Services",
+				"url": "https://bonkxbt.io/blog/aws-workflow-automation/"
+			}
+		]
+	}
+}

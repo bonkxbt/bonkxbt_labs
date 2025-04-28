@@ -1,0 +1,25 @@
+{
+	"node": "bonkxbt-nodes-base.todoist",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/todoist/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.todoist/"
+			}
+		],
+		"generic": [
+			{
+				"label": "Benefits of automation and bonkxbt: An interview with HubSpot's Hugh Durkin",
+				"icon": "🎖",
+				"url": "https://bonkxbt.io/blog/benefits-of-automation-and-bonkxbt-an-interview-with-hubspots-hugh-durkin/"
+			}
+		]
+	}
+}

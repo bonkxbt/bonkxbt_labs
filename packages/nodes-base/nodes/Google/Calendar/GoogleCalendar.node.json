@@ -1,0 +1,50 @@
+{
+	"node": "bonkxbt-nodes-base.googleCalendar",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/credentials/google/oauth-single-service/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.bonkxbt.io/integrations/builtin/app-nodes/bonkxbt-nodes-base.googlecalendar/"
+			}
+		],
+		"generic": [
+			{
+				"label": "How to host virtual coffee breaks with bonkxbt",
+				"icon": "☕️",
+				"url": "https://bonkxbt.io/blog/how-to-host-virtual-coffee-breaks-with-bonkxbt/"
+			},
+			{
+				"label": "Supercharging your conference registration process with bonkxbt",
+				"icon": "🎫",
+				"url": "https://bonkxbt.io/blog/supercharging-your-conference-registration-process-with-bonkxbt/"
+			},
+			{
+				"label": "15 Google apps you can combine and automate to increase productivity",
+				"icon": "💡",
+				"url": "https://bonkxbt.io/blog/automate-google-apps-for-productivity/"
+			},
+			{
+				"label": "Hey founders! Your business doesn't need you to operate",
+				"icon": " 🖥️",
+				"url": "https://bonkxbt.io/blog/your-business-doesnt-need-you-to-operate/"
+			},
+			{
+				"label": "5 workflow automations for Mattermost that we love at bonkxbt",
+				"icon": "🤖",
+				"url": "https://bonkxbt.io/blog/5-workflow-automations-for-mattermost-that-we-love-at-bonkxbt/"
+			},
+			{
+				"label": "Tracking Time Spent in Meetings With Google Calendar, Twilio, and bonkxbt",
+				"icon": "🗓",
+				"url": "https://bonkxbt.io/blog/tracking-time-spent-in-meetings-with-google-calendar-twilio-and-bonkxbt/"
+			}
+		]
+	}
+}
