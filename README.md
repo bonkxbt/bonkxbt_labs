@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-CA : DjEXDmm4GeECcWJfMznzxzuZeffL8p9fQJcH6cDkpump
+CA :
 </p>
 <p align="center">
     <a href="#">
